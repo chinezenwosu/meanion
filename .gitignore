@@ -1,3 +1,5 @@
 node_modules
 *.swp
 *log
+npm-debug.log
+public
