@@ -3,23 +3,31 @@ import browserify from 'browserify';
 import source from 'vinyl-source-stream';
 import bower from 'gulp-bower';
 
+const CLIENT_ROOT = 'client';
+const PUBLIC_ROOT = 'public';
+const paths = {
+  static_files: 'client/**/*.html',
+  entry: 'client/src/app.js',
+  src: 'client/src/**/*',
+  bower: 'public/lib'
+};
 const static_files = 'app/**/*.html';
 
 gulp.task('bower', function() {
   return bower()
-    .pipe(gulp.dest('public/lib'));
+    .pipe(gulp.dest(paths.bower));
 });
 
 gulp.task('default', ['build', 'watch']);
 
 gulp.task('move-static', () => {
-  return gulp.src(static_files)
-    .pipe(gulp.dest('public'));
+  return gulp.src(paths.static_files)
+    .pipe(gulp.dest(PUBLIC_ROOT));
 });
 
 gulp.task('transpile', () => {
 
-  return browserify('app/src/app.js')
+  return browserify(paths.entry)
     .transform('babelify')
     .bundle()
     .on('error', function(error){
@@ -33,5 +41,5 @@ gulp.task('transpile', () => {
 gulp.task('build', ['bower', 'transpile', 'move-static']);
 
 gulp.task('watch', ['transpile'], () => {
-  gulp.watch(['app/src/**/*', static_files], ['transpile', 'move-static']);
+  gulp.watch([paths.src, static_files], ['transpile', 'move-static']);
 });
