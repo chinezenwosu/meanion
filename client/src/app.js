@@ -1,5 +1,7 @@
 const app = angular.module('dance', []);
 
-app.controller('DanceController', function() {
-    this.dances = ['Ballet', 'Tango', 'Rumba', 'Salsa', 'Samba', 'Cakewalk', 'Bolero', 'Cha-cha', 'Veleta'];
+app.controller('DanceController', function($http) {
+    $http.get('/dances').then((response) => {
+        this.dances = response.data;
+    });
 });
