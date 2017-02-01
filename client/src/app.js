@@ -22,25 +22,8 @@ app.config(($stateProvider, $urlRouterProvider) => {
     url: '/:danceName',
     templateUrl: '../dances/competitions.html',
     resolve: {
-      danceService: function($q) {
-        return $q((resolve, reject) => {
-          let dance = {
-            'name': 'Ballet',
-            'competitions': [
-              {
-                'name': 'Dancathona',
-                'winner': 'Jane Affleck',
-                'year': 2014
-              },
-              {
-                'name': 'Brena National Dance Competition',
-                'winner': 'Jane Affleck',
-                'year': 2015
-              },
-            ]
-          };
-          resolve({ data: dance });
-        });
+      danceService: function($http, $stateParams) {
+        return $http.get(`/dances/${$stateParams.danceName}`);
       }
     },
     controller: function(danceService) {

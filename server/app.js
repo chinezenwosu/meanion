@@ -20,6 +20,16 @@ app.get('/dances', (request, response) => {
   });
 });
 
+app.get('/dances/:name', (request, response) => {
+  let dance = mongoUtil.dances().find({name: request.params.name}).limit(1).next((err, doc) => {
+    if(err) {
+      response.sendStatus(400);
+    }
+    console.log('Dance document: ', doc);
+    response.json(doc);
+  });
+});
+
 app.get('*', (request, response) => {
    response.sendFile(PUBLIC_PATH)
 });

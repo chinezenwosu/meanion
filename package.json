@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "start": "gulp",
+    "seed": "mongoimport --db meanion --collection dances --type json --file server/seeds/dances.json --jsonArray --drop"
   },
   "author": "Chineze Nwosu",
   "license": "ISC",
