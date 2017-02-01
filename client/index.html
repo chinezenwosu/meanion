@@ -2,14 +2,12 @@
 <html lang="en" ng-app="dance">
   <head>
     <meta charset="UTF-8">
-    <title>School of Dancee</title>
+    <title>School of Dance</title>
     <script src="lib/angular/angular.min.js"></script>
   </head>
   <body>
     <h1>School of Dance</h1>
-    <ul ng-controller="DanceController as danceCtrl">
-      <li ng-repeat="dance in danceCtrl.dances">{{ dance }}</li>
-    </ul>
+    <div ui-view></div>
     <script src="bundle.js"></script>
   </body>
 </html>

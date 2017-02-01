@@ -1,0 +1,6 @@
+<ul>
+    <li ng-repeat="dance in dancesCtrl.dances">
+        <a ui-sref="dances.competitions({danceName: dance})">{{ dance }}</a>
+    </li>
+</ul>
+<div ui-view></div>

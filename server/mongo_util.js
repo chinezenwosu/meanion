@@ -11,6 +11,7 @@ module.exports = {
         console.log("Error connecting to MongoDB. Check your mongod connection");
         process.exit(1);
       }
+      console.log('Connected to mongodb')
       _db = db
     });
   },

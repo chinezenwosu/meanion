@@ -13,15 +13,15 @@ mongoUtil.connect();
 app.use(express.static(PUBLIC_PATH));
 
 app.get('/dances', (request, response) => {
-    dances = mongoUtil.dances().find();
-    danceArray = dances.toArray((err, docs) => {
-        let danceNames = docs.map(dance => dance.name);
-        response.json(danceNames);
-    });
+  let dances = mongoUtil.dances().find();
+  let danceArray = dances.toArray((err, docs) => {
+    let danceNames = docs.map(dance => dance.name);
+    response.json(danceNames);
+  });
 });
 
 app.get('*', (request, response) => {
-    response.sendFile(PUBLIC_PATH)
+   response.sendFile(PUBLIC_PATH)
 });
 
 app.listen(PORT, () => console.log('Listening on', PORT));

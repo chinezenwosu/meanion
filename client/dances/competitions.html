@@ -1,0 +1,17 @@
+<h3>{{danceCtrl.dance.name}} Competitions</h3>
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Winner</td>
+            <td>Year</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="competition in danceCtrl.dance.competitions">
+            <td>{{ competition.name }}</td>
+            <td>{{ competition.winner }}</td>
+            <td>{{ competition.year }}</td>
+        </tr>
+    </tbody>
+</table>
