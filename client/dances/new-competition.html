@@ -1,0 +1,22 @@
+<h3>New Competition for {{ competitionCtrl.danceName }}</h3>
+<form ng-submit="competitionCtrl.saveCompetition(competition)" class="form-inline" role="form">
+  <div class="form-group">
+    <div class="col-sm-4 comp-col">
+      <label class="sr-only" for="name">Name</label>
+      <input ng-model="competition.name" type="text" class="form-control" name="name" placeholder="Name">
+    </div>
+    <div class="col-sm-4 comp-col">
+      <label class="sr-only" for="winner">Winner</label>
+      <input ng-model="competition.winner" type="text" class="form-control" name="winner" placeholder="Winner">
+    </div>
+    <div class="col-sm-4 comp-col">
+      <label class="sr-only" for="year">Year</label>
+      <input ng-model="competition.year" type="number" class="form-control" name="year" placeholder="Year">
+    </div>
+  </div>
+  <div class="comp-col">
+    <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+  </div>
+</form>
+
+{{ competition }}

@@ -31,4 +31,15 @@ app.config(($stateProvider, $urlRouterProvider) => {
     },
     controllerAs: 'danceCtrl'
   })
+  .state('dances.new', {
+    url: '/:danceName/competition/new',
+    templateUrl: '../dances/new-competition.html',
+    controller: function($state, $stateParams) {
+      this.danceName = $stateParams.danceName;
+      this.saveCompetition = function(competition) {
+        $state.go('dances.competitions', { danceName: $stateParams.danceName });
+      }
+    },
+    controllerAs: 'competitionCtrl'
+  })
 });

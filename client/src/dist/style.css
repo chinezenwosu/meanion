@@ -17,7 +17,7 @@ ul.dance-btn-group li {
 }
 
 ul.dance-btn-group li a {
-  border: 1px solid #ddd;
+  border: 3px solid #ddd;
   padding: 20px 15px;
   display: block;
   margin: 0 0 20px;
@@ -25,12 +25,18 @@ ul.dance-btn-group li a {
   font-weight: 800;
 }
 
-.dance-btn-group li a:hover,
 .dance-btn-group li a:focus {
+  color: #fb630b;
+  text-decoration: none;
+  border: 3px solid rgba(251, 99, 11, 0.4);
+  cursor: pointer;
+}
+
+.dance-btn-group li a:hover {
   color: #fff;
   text-decoration: none;
-  background: #fb630b;
-  border: 1px solid #fb630b;
+  background: rgba(251, 99, 11, 0.6);
+  border: 3px solid rgba(251, 99, 11, 0.1);
   cursor: pointer;
 }
 
@@ -83,4 +89,32 @@ ul.dance-btn-group li a {
 
 .table>thead {
   border-top: solid #eee;  
+}
+
+.competition-div {
+  display: inline-block;
+  width: 100%;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group .form-control {
+  width: 100%;
+  padding: 30px;
+  border-radius: 0;
+  border: 3px solid #eee;
+}
+
+.comp-col {
+  padding: 1px;
+}
+
+.comp-col .btn {
+  margin-top: 15px;
+}
+
+.btn {
+  border-radius: 0;
 }
