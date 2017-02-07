@@ -6,12 +6,11 @@ import bower from 'gulp-bower';
 const CLIENT_ROOT = 'client';
 const PUBLIC_ROOT = 'public';
 const paths = {
-  static_files: 'client/**/*.html',
+  static_files: ['client/**/*.{html,css,png,gif,svg}'],
   entry: 'client/src/app.js',
   src: 'client/src/**/*',
   bower: 'public/lib'
 };
-const static_files = 'app/**/*.html';
 
 gulp.task('bower', function() {
   return bower()
@@ -41,5 +40,5 @@ gulp.task('transpile', () => {
 gulp.task('build', ['bower', 'transpile', 'move-static']);
 
 gulp.task('watch', ['transpile'], () => {
-  gulp.watch([paths.src, static_files], ['transpile', 'move-static']);
+  gulp.watch([paths.src, paths.static_files], ['transpile', 'move-static']);
 });

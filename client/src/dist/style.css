@@ -1,0 +1,86 @@
+body {
+  font-family: "Open Sans";
+}
+
+ul.dance-btn-group {
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
+  padding: 0;
+}
+
+ul.dance-btn-group li {
+  list-style: none;
+}
+
+ul.dance-btn-group li a {
+  border: 1px solid #ddd;
+  padding: 20px 15px;
+  display: block;
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.dance-btn-group li a:hover,
+.dance-btn-group li a:focus {
+  color: #fff;
+  text-decoration: none;
+  background: #fb630b;
+  border: 1px solid #fb630b;
+  cursor: pointer;
+}
+
+.dance {
+  margin: 10px 100px 20px;
+}
+
+.dance h1,
+.dance h3 {
+  padding: 20px 0 40px;
+}
+
+.navbar.navbar-default {
+  background: #fff;
+  box-shadow: 2px 2px 2px #eee;
+}
+
+.navbar.navbar-default ul {
+  padding: 20px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #fb630b;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: #fff;
+}
+
+.navbar-brand {
+  padding: 15px 0 15px 40px;
+}
+
+.navbar-brand > img {
+  width: 50px;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  padding: 20px; 
+  line-height: 1.5;
+  vertical-align: top;
+  border: 1px solid #ddd;
+}
+
+.table>thead {
+  border-top: solid #eee;  
+}

@@ -1,6 +1,6 @@
-<ul>
+<ul class="dance-btn-group">
     <li ng-repeat="dance in dancesCtrl.dances">
-        <a ui-sref="dances.competitions({danceName: dance})">{{ dance }}</a>
+        <a class="dance-btn" ui-sref="dances.competitions({danceName: dance})">{{ dance }}</a>
     </li>
 </ul>
 <div ui-view></div>
