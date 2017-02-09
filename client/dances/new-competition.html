@@ -11,12 +11,15 @@
     </div>
     <div class="col-sm-4 comp-col">
       <label class="sr-only" for="year">Year</label>
-      <input ng-model="competition.year" type="number" class="form-control" name="year" placeholder="Year">
+      <span>
+      <select ng-model="competition.year" class="form-control" name="year">
+        <option value="" disabled selected>Year</option>
+        <option ng-repeat="year in competitionCtrl.years(1980)" value="{{year}}" ng-selected="year == selected">{{ year }}</option>
+      </select>
+      </span>
     </div>
   </div>
   <div class="comp-col">
     <button type="submit" class="btn btn-lg btn-primary">Submit</button>
   </div>
 </form>
-
-{{ competition }}

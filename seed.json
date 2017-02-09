@@ -1,0 +1,5 @@
+{
+	"undefined": "mongodb://localhost:27017/meanion",
+	"development": "mongodb://localhost:27017/meanion",
+	"production": "mongodb://heroku_z0xnmvnq:kn28p26uuvgikek4tutsbvoteh@ds147799.mlab.com:47799/heroku_z0xnmvnq"
+}

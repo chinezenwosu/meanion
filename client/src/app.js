@@ -34,10 +34,23 @@ app.config(($stateProvider, $urlRouterProvider) => {
   .state('dances.new', {
     url: '/:danceName/competition/new',
     templateUrl: '../dances/new-competition.html',
-    controller: function($state, $stateParams) {
+    controller: function($state, $stateParams, $http) {
       this.danceName = $stateParams.danceName;
+      this.years = function(startYear) {
+        var currentYear = new Date().getFullYear(), years = [];
+        startYear = startYear || 1980;
+
+        while ( startYear <= currentYear ) {
+          years.push(startYear++);
+        } 
+        return years;
+      }
+
       this.saveCompetition = function(competition) {
-        $state.go('dances.competitions', { danceName: $stateParams.danceName });
+        $http({ method: 'POST', url: `/dances/${$stateParams.danceName}/competitions` , data: { competition } })
+          .then(function() {
+            $state.go('dances.competitions', { danceName: $stateParams.danceName });
+          });
       }
     },
     controllerAs: 'competitionCtrl'

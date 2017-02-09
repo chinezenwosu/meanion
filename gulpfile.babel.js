@@ -17,7 +17,7 @@ gulp.task('bower', function() {
     .pipe(gulp.dest(paths.bower));
 });
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', ['build']);
 
 gulp.task('move-static', () => {
   return gulp.src(paths.static_files)
@@ -40,5 +40,5 @@ gulp.task('transpile', () => {
 gulp.task('build', ['bower', 'transpile', 'move-static']);
 
 gulp.task('watch', ['transpile'], () => {
-  gulp.watch([paths.src, paths.static_files], ['transpile', 'move-static']);
+  gulp.watch([paths.src, paths.static_files], ['build']);
 });

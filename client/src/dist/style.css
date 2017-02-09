@@ -41,17 +41,17 @@ ul.dance-btn-group li a {
 }
 
 .dance {
-  margin: 10px 100px 20px;
+  margin: 50px 100px 20px;
 }
 
-.dance h1,
 .dance h3 {
   padding: 20px 0 40px;
 }
 
 .navbar.navbar-default {
-  background: #fff;
+  background: #79b9e6;
   box-shadow: 2px 2px 2px #eee;
+  min-height: 140px;
 }
 
 .navbar.navbar-default ul {
@@ -69,10 +69,20 @@ ul.dance-btn-group li a {
 
 .navbar-brand {
   padding: 15px 0 15px 40px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  display: inline-flex;
 }
 
 .navbar-brand > img {
-  width: 50px;
+  height: 150px;
+}
+
+.navbar-brand > h1 {
+  color: #fff;
+  padding-top: 15px;
+  font-family: "Lato";
 }
 
 .table>tbody>tr>td,
@@ -105,6 +115,21 @@ ul.dance-btn-group li a {
   padding: 30px;
   border-radius: 0;
   border: 3px solid #eee;
+}
+
+.form-group span {
+  border: 3px solid #eee;
+  display: block;
+  overflow: hidden;
+  padding: 13px 30px;
+}
+
+.form-group select.form-control {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #999;
 }
 
 .comp-col {
