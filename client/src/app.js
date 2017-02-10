@@ -13,8 +13,13 @@ app.config(($stateProvider, $urlRouterProvider) => {
         return $http.get('/dances');
       }
     },
-    controller: function(dancesService) {
+    controller: function(dancesService, $location) {
       this.dances = dancesService.data;
+      this.isActive = function(dance) {
+        const pattern = new RegExp(/dances\/(\w+)/);
+        const matches = pattern.exec($location.path())
+        return matches[0] === `dances/${dance}`;
+      }
     },
     controllerAs: 'dancesCtrl'
   })
