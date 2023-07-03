@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Ballet",
+    "competitions": [
+      {
+        "name": "Dancathonia",
+        "winner": "Jane Affleck",
+        "year": 2014
+      },
+      {
+        "name": "Brena National Dance Competition",
+        "winner": "Jane Affleck",
+        "year": 2015
+      }
+    ]
+  },
+  {
+    "name": "Tango",
+    "competitions": [
+      {
+        "name": "La Vida Dance Competition",
+        "winner": "Caloosi Marcos",
+        "year": 2012
+      }
+    ]
+  },
+  {
+    "name": "Rumba",
+    "competitions": [
+      {
+        "name": "All-Dance Competition",
+        "winner": "Caloosi Marcos",
+        "year": 2013
+      },
+      {
+        "name": "Seigo Dance Race",
+        "winner": "Jacky Dean",
+        "year": 2012
+      },
+      {
+        "name": "Barbarita Dance It On",
+        "winner": "Julie Liana",
+        "year": 2015
+      }
+    ]
+  },
+  {
+    "name": "Salsa",
+    "competitions": [
+      {
+        "name": "Salsa Dance Competition",
+        "winner": "Briana Kite",
+        "year": 2010
+      },
+      {
+        "name": "Salsa Dance Competition Season 2",
+        "winner": "Julie Liana",
+        "year": 2012
+      },
+      {
+        "name": "La Braska Dance It On",
+        "winner": "Julie Liana",
+        "year": 2015
+      }
+    ]
+  },
+  {
+    "name": "Samba",
+    "competitions": [
+      {
+        "name": "Sambaaa Dance Competition",
+        "winner": "Kelvin O'brien",
+        "year": 2011
+      },
+      {
+        "name": "Crazy Samba Dance Competition",
+        "winner": "Ginger Norton",
+        "year": 2012
+      },
+      {
+        "name": "Bring It Dance Night",
+        "winner": "Mike Enoch",
+        "year": 2014
+      }
+    ]
+  },
+  {
+    "name": "Cha-cha",
+    "competitions": [
+      {
+        "name": "Feel-My-Feet Dance Competition",
+        "winner": "Jon Cornnel",
+        "year": 2015
+      },
+      {
+        "name": "Chalaaha Dance Competition",
+        "winner": "Lisa Bean",
+        "year": 2016
+      }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+<ul class="dance-btn-group">
+    <li ng-repeat="dance in dancesCtrl.dances">
+        <a class="dance-btn" ui-sref="dances.competitions({danceName: dance})" ng-class="{'active': dancesCtrl.isActive(dance)}">
+            {{ dance }}
+        </a>
+    </li>
+</ul>
+<div ui-view></div>

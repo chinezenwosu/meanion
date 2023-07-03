@@ -12,3 +12,7 @@ The following javascript libraries were used:
 
 * `npm install` to resolve dependencies
 * `npm install -g gulp` to install Gulp globally
+
+## Seed Data
+
+Run `mongoimport --db meanion --collection dances --file server/seeds/dances.json --type json --jsonArray --drop` at the root directory

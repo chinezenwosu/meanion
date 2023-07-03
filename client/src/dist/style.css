@@ -1,0 +1,145 @@
+body {
+  font-family: "Open Sans";
+}
+
+ul.dance-btn-group {
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
+  padding: 0;
+}
+
+ul.dance-btn-group li {
+  list-style: none;
+}
+
+ul.dance-btn-group li a {
+  border: 3px solid #ddd;
+  padding: 20px 15px;
+  display: block;
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.dance-btn-group li a:focus,
+.dance-btn-group li a.active {
+  text-decoration: none;
+  border-bottom: 3px solid rgba(251, 99, 11, 0.7);
+  cursor: pointer;
+}
+
+.dance-btn-group li a:hover {
+  color: #fff;
+  text-decoration: none;
+  background: rgba(251, 99, 11, 0.6);
+  border: 3px solid rgba(251, 99, 11, 0.1);
+  cursor: pointer;
+}
+
+.dance {
+  margin: 50px 100px 20px;
+}
+
+.dance h3 {
+  padding: 20px 0 40px;
+}
+
+.navbar.navbar-default {
+  background: #79b9e6;
+  box-shadow: 2px 2px 2px #eee;
+  min-height: 140px;
+}
+
+.navbar.navbar-default ul {
+  padding: 20px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #fb630b;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: #fff;
+}
+
+.navbar-brand {
+  padding: 15px 0 15px 40px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  display: inline-flex;
+}
+
+.navbar-brand > img {
+  height: 150px;
+}
+
+.navbar-brand > h1 {
+  color: #fff;
+  padding-top: 15px;
+  font-family: "Lato";
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  padding: 20px; 
+  line-height: 1.5;
+  vertical-align: top;
+  border: 1px solid #ddd;
+}
+
+.table>thead {
+  border-top: solid #eee;  
+}
+
+.competition-div {
+  display: inline-block;
+  width: 100%;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group .form-control {
+  width: 100%;
+  padding: 30px;
+  border-radius: 0;
+  border: 3px solid #eee;
+}
+
+.form-group span {
+  border: 3px solid #eee;
+  display: block;
+  overflow: hidden;
+  padding: 13px 30px;
+}
+
+.form-group select.form-control {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #999;
+}
+
+.comp-col {
+  padding: 1px;
+}
+
+.comp-col .btn {
+  margin-top: 15px;
+}
+
+.btn {
+  border-radius: 0;
+}

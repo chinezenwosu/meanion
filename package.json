@@ -2,25 +2,32 @@
   "name": "meanion",
   "version": "1.0.0",
   "description": "A MEAN stack app for learning purposes",
+  "repository": "https://github.com/andela-cnwosu/meanion",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp && node server/app.js",
+    "seed": "seed"
+  },
+  "engines": {
+    "node": "6.9.2"
   },
   "author": "Chineze Nwosu",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.4.9",
-    "angular-ui-router": "^0.2.17",
-    "body-parser": "^1.14.2",
-    "express": "^4.13.4",
-    "mongodb": "^2.1.4"
-  },
-  "devDependencies": {
+    "angular-ui-router": "^0.3.2",
     "babel-core": "^6.2.1",
     "babel-preset-es2015": "^6.1.18",
+    "babel-register": "^6.22.0",
     "babelify": "^7.2.0",
+    "body-parser": "^1.14.2",
     "browserify": "^12.0.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.0",
     "gulp": "^3.9.0",
+    "gulp-bower": "0.0.13",
+    "mongodb": "^2.2.22",
+    "node-mongo-seeds": "^2.3.0",
     "vinyl-source-stream": "^1.1.0"
   }
 }

@@ -1,0 +1,24 @@
+{
+  "name": "meanion",
+  "description": "A MEAN stack app for learning purposes",
+  "main": "index.js",
+  "authors": [
+    "Chineze Nwosu"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "mean"
+  ],
+  "homepage": "https://github.com/andela-cnwosu/meanion",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1"
+  }
+}
